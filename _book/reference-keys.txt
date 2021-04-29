@@ -1,0 +1,9 @@
+fig:salt
+understanding-the-data-from-a-product-perspective
+understanding-the-products-from-a-chemical-and-physical-point-of-view
+understanding-the-products-from-a-hedonic-point-of-view
+understanding-the-data-from-a-consumer-perspective
+playing-with-r-and-the-data
+understanding-the-consumers-behaviour
+understanding-the-consumers-preferences
+linking-consumers-preferences-and-behaviour

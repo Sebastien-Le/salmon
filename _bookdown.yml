@@ -1,0 +1,6 @@
+book_filename: "salmon"
+delete_merged_file: true
+language:
+  ui:
+    chapter_name: "Chapter "
+rmd_files: ["index.Rmd", "01-product.Rmd", "02-consumer.Rmd"]
