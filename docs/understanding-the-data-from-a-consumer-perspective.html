@@ -1,0 +1,1007 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 2 Understanding the data from a consumer perspective | Analyzing Sensory and Consumer Data : the salmon case study</title>
+  <meta name="description" content="The European project EUROSALMON." />
+  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 2 Understanding the data from a consumer perspective | Analyzing Sensory and Consumer Data : the salmon case study" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="The European project EUROSALMON." />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 2 Understanding the data from a consumer perspective | Analyzing Sensory and Consumer Data : the salmon case study" />
+  
+  <meta name="twitter:description" content="The European project EUROSALMON." />
+  
+
+<meta name="author" content="S. Lê" />
+
+
+<meta name="date" content="2021-04-29" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="understanding-the-data-from-a-product-perspective.html"/>
+
+<script src="libs/header-attrs-2.7/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">A Minimal Book Example</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a></li>
+<li class="chapter" data-level="1" data-path="understanding-the-data-from-a-product-perspective.html"><a href="understanding-the-data-from-a-product-perspective.html"><i class="fa fa-check"></i><b>1</b> Understanding the data from a product perspective</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="understanding-the-data-from-a-product-perspective.html"><a href="understanding-the-data-from-a-product-perspective.html#understanding-the-products-from-a-chemical-and-physical-point-of-view"><i class="fa fa-check"></i><b>1.1</b> Understanding the products from a chemical and physical point of view</a></li>
+<li class="chapter" data-level="1.2" data-path="understanding-the-data-from-a-product-perspective.html"><a href="understanding-the-data-from-a-product-perspective.html#understanding-the-products-from-a-hedonic-point-of-view"><i class="fa fa-check"></i><b>1.2</b> Understanding the products from a hedonic point of view</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="understanding-the-data-from-a-consumer-perspective.html"><a href="understanding-the-data-from-a-consumer-perspective.html"><i class="fa fa-check"></i><b>2</b> Understanding the data from a consumer perspective</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="understanding-the-data-from-a-consumer-perspective.html"><a href="understanding-the-data-from-a-consumer-perspective.html#playing-with-r-and-the-data"><i class="fa fa-check"></i><b>2.1</b> Playing with R and the data</a></li>
+<li class="chapter" data-level="2.2" data-path="understanding-the-data-from-a-consumer-perspective.html"><a href="understanding-the-data-from-a-consumer-perspective.html#understanding-the-consumers-behaviour"><i class="fa fa-check"></i><b>2.2</b> Understanding the consumers’ behaviour</a></li>
+<li class="chapter" data-level="2.3" data-path="understanding-the-data-from-a-consumer-perspective.html"><a href="understanding-the-data-from-a-consumer-perspective.html#understanding-the-consumers-preferences"><i class="fa fa-check"></i><b>2.3</b> Understanding the consumers’ preferences</a></li>
+<li class="chapter" data-level="2.4" data-path="understanding-the-data-from-a-consumer-perspective.html"><a href="understanding-the-data-from-a-consumer-perspective.html#linking-consumers-preferences-and-behaviour"><i class="fa fa-check"></i><b>2.4</b> Linking consumers’ preferences and behaviour</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Analyzing Sensory and Consumer Data : the salmon case study</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="understanding-the-data-from-a-consumer-perspective" class="section level1" number="2">
+<h1><span class="header-section-number">Chapter 2</span> Understanding the data from a consumer perspective</h1>
+<div id="playing-with-r-and-the-data" class="section level2" number="2.1">
+<h2><span class="header-section-number">2.1</span> Playing with R and the data</h2>
+<p>In this part, the analyses are not going to be too complicated, but you will see that data manipulation and visualization is not simple when you deal with categorical variables.
+Please install and load the two following packages.</p>
+<div class="sourceCode" id="cb52"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb52-1"><a href="understanding-the-data-from-a-consumer-perspective.html#cb52-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&quot;questionr&quot;</span>)</span>
+<span id="cb52-2"><a href="understanding-the-data-from-a-consumer-perspective.html#cb52-2" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&quot;dataMaid&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb53"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb53-1"><a href="understanding-the-data-from-a-consumer-perspective.html#cb53-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(questionr)</span>
+<span id="cb53-2"><a href="understanding-the-data-from-a-consumer-perspective.html#cb53-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dataMaid)</span></code></pre></div>
+<p><strong>Exercise. </strong>Comment on the different ways of describing the data.</p>
+<div class="sourceCode" id="cb54"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb54-1"><a href="understanding-the-data-from-a-consumer-perspective.html#cb54-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(salmon_hedo_conso)</span>
+<span id="cb54-2"><a href="understanding-the-data-from-a-consumer-perspective.html#cb54-2" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(salmon_hedo_conso)</span>
+<span id="cb54-3"><a href="understanding-the-data-from-a-consumer-perspective.html#cb54-3" aria-hidden="true" tabindex="-1"></a><span class="fu">describe</span>(salmon_hedo_conso)</span>
+<span id="cb54-4"><a href="understanding-the-data-from-a-consumer-perspective.html#cb54-4" aria-hidden="true" tabindex="-1"></a><span class="fu">describe</span>(salmon_hedo_conso[,<span class="dv">32</span><span class="sc">:</span><span class="dv">40</span>])</span></code></pre></div>
+<p>In the following part, we’re going to change the names of the variables as well as their labels, to change the order of the levels of a given factor of interest as well as their value ; finally, we’re going to plot a categorical variable, in a simple way and in a more complicated way.</p>
+<div class="sourceCode" id="cb55"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb55-1"><a href="understanding-the-data-from-a-consumer-perspective.html#cb55-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Manipulating data</span></span>
+<span id="cb55-2"><a href="understanding-the-data-from-a-consumer-perspective.html#cb55-2" aria-hidden="true" tabindex="-1"></a><span class="co">#Names of the variables</span></span>
+<span id="cb55-3"><a href="understanding-the-data-from-a-consumer-perspective.html#cb55-3" aria-hidden="true" tabindex="-1"></a><span class="fu">colnames</span>(salmon_hedo_conso)</span></code></pre></div>
+<pre><code>##   [1] &quot;IKIDEN&quot;                  &quot;Country&quot;                
+##   [3] &quot;prod1_Fr&quot;                &quot;prod2_Fr&quot;               
+##   [5] &quot;prod3_Fr&quot;                &quot;prod4_Scot&quot;             
+##   [7] &quot;prod5_Ger&quot;               &quot;prod6_Ire&quot;              
+##   [9] &quot;prod7_Ire&quot;               &quot;prod8_Ger&quot;              
+##  [11] &quot;prod9_Ire&quot;               &quot;prod10_It&quot;              
+##  [13] &quot;prod11_Fr&quot;               &quot;prod12_Dk&quot;              
+##  [15] &quot;prod13_Ger&quot;              &quot;prod14_Ger&quot;             
+##  [17] &quot;prod15_Fr&quot;               &quot;prod16_Ger&quot;             
+##  [19] &quot;prod17_Fr&quot;               &quot;prod18_UK&quot;              
+##  [21] &quot;prod19_UK&quot;               &quot;prod20_Dk&quot;              
+##  [23] &quot;prod21_UK&quot;               &quot;prod22_Fr&quot;              
+##  [25] &quot;prod23_Ger&quot;              &quot;prod24_Dk&quot;              
+##  [27] &quot;prod25_Bel&quot;              &quot;prod26_UK&quot;              
+##  [29] &quot;prod27_Fr&quot;               &quot;prod28_Bel&quot;             
+##  [31] &quot;prod29_Scot&quot;             &quot;prod30_Bel&quot;             
+##  [33] &quot;Who&quot;                     &quot;Frequence&quot;              
+##  [35] &quot;When&quot;                    &quot;Taste&quot;                  
+##  [37] &quot;Healthy&quot;                 &quot;Pleasure&quot;               
+##  [39] &quot;No.preparation&quot;          &quot;Ways&quot;                   
+##  [41] &quot;Guest&quot;                   &quot;Authentic&quot;              
+##  [43] &quot;Not.expensive&quot;           &quot;Supermarket&quot;            
+##  [45] &quot;Deli&quot;                    &quot;Caterer&quot;                
+##  [47] &quot;Fish.shop&quot;               &quot;Market&quot;                 
+##  [49] &quot;Mobile.van&quot;              &quot;Everyday&quot;               
+##  [51] &quot;Special&quot;                 &quot;Day.snack&quot;              
+##  [53] &quot;Evening.snack&quot;           &quot;Aperitif&quot;               
+##  [55] &quot;Starter&quot;                 &quot;Salad&quot;                  
+##  [57] &quot;Cooked.meal&quot;             &quot;Sandwich&quot;               
+##  [59] &quot;Main&quot;                    &quot;Vegetable&quot;              
+##  [61] &quot;Lemon&quot;                   &quot;Bread..butter&quot;          
+##  [63] &quot;Lemon..bread..butter&quot;    &quot;C..fraiche&quot;             
+##  [65] &quot;C..fraiche.with.herbs&quot;   &quot;Fresh.cheese&quot;           
+##  [67] &quot;Fresh.cheese.with.herbs&quot; &quot;Shallots&quot;               
+##  [69] &quot;Mustard&quot;                 &quot;Butter&quot;                 
+##  [71] &quot;Black.pepper&quot;            &quot;Horseradish&quot;            
+##  [73] &quot;Scottish&quot;                &quot;Norwegian&quot;              
+##  [75] &quot;Atlantic&quot;                &quot;Irish&quot;                  
+##  [77] &quot;Wild&quot;                    &quot;Do.not.know&quot;            
+##  [79] &quot;Colour&quot;                  &quot;Price&quot;                  
+##  [81] &quot;Origin&quot;                  &quot;Brand&quot;                  
+##  [83] &quot;Advertising&quot;             &quot;Glossiness&quot;             
+##  [85] &quot;Packaging&quot;               &quot;Labelling.information&quot;  
+##  [87] &quot;Number.slices&quot;           &quot;Weight&quot;                 
+##  [89] &quot;Use.by.date&quot;             &quot;Usual.brand&quot;            
+##  [91] &quot;Appetising&quot;              &quot;Firm&quot;                   
+##  [93] &quot;Regular&quot;                 &quot;Nice.colour&quot;            
+##  [95] &quot;Nice.odour&quot;              &quot;Smooth.texture&quot;         
+##  [97] &quot;Firm.texture&quot;            &quot;Greasy.mouth&quot;           
+##  [99] &quot;Characteristic.taste&quot;    &quot;Not.too.salty&quot;</code></pre>
+<div class="sourceCode" id="cb57"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb57-1"><a href="understanding-the-data-from-a-consumer-perspective.html#cb57-1" aria-hidden="true" tabindex="-1"></a><span class="fu">colnames</span>(salmon_hedo_conso)[<span class="dv">62</span>] <span class="ot">&lt;-</span> <span class="st">&quot;Bread, butter&quot;</span></span>
+<span id="cb57-2"><a href="understanding-the-data-from-a-consumer-perspective.html#cb57-2" aria-hidden="true" tabindex="-1"></a><span class="fu">colnames</span>(salmon_hedo_conso)[<span class="dv">63</span>] <span class="ot">&lt;-</span> <span class="st">&quot;Lemon, bread, butter&quot;</span></span>
+<span id="cb57-3"><a href="understanding-the-data-from-a-consumer-perspective.html#cb57-3" aria-hidden="true" tabindex="-1"></a><span class="fu">colnames</span>(salmon_hedo_conso)[<span class="dv">64</span>] <span class="ot">&lt;-</span> <span class="st">&quot;Crême fraîche&quot;</span></span>
+<span id="cb57-4"><a href="understanding-the-data-from-a-consumer-perspective.html#cb57-4" aria-hidden="true" tabindex="-1"></a><span class="fu">colnames</span>(salmon_hedo_conso)[<span class="dv">65</span>] <span class="ot">&lt;-</span> <span class="st">&quot;Crême fraîche with herbs&quot;</span></span>
+<span id="cb57-5"><a href="understanding-the-data-from-a-consumer-perspective.html#cb57-5" aria-hidden="true" tabindex="-1"></a><span class="fu">colnames</span>(salmon_hedo_conso)[<span class="dv">66</span>] <span class="ot">&lt;-</span> <span class="st">&quot;Fresh cheese&quot;</span></span>
+<span id="cb57-6"><a href="understanding-the-data-from-a-consumer-perspective.html#cb57-6" aria-hidden="true" tabindex="-1"></a><span class="fu">colnames</span>(salmon_hedo_conso)[<span class="dv">100</span>] <span class="ot">&lt;-</span> <span class="st">&quot;Not too salty&quot;</span></span>
+<span id="cb57-7"><a href="understanding-the-data-from-a-consumer-perspective.html#cb57-7" aria-hidden="true" tabindex="-1"></a><span class="fu">colnames</span>(salmon_hedo_conso)</span></code></pre></div>
+<pre><code>##   [1] &quot;IKIDEN&quot;                   &quot;Country&quot;                 
+##   [3] &quot;prod1_Fr&quot;                 &quot;prod2_Fr&quot;                
+##   [5] &quot;prod3_Fr&quot;                 &quot;prod4_Scot&quot;              
+##   [7] &quot;prod5_Ger&quot;                &quot;prod6_Ire&quot;               
+##   [9] &quot;prod7_Ire&quot;                &quot;prod8_Ger&quot;               
+##  [11] &quot;prod9_Ire&quot;                &quot;prod10_It&quot;               
+##  [13] &quot;prod11_Fr&quot;                &quot;prod12_Dk&quot;               
+##  [15] &quot;prod13_Ger&quot;               &quot;prod14_Ger&quot;              
+##  [17] &quot;prod15_Fr&quot;                &quot;prod16_Ger&quot;              
+##  [19] &quot;prod17_Fr&quot;                &quot;prod18_UK&quot;               
+##  [21] &quot;prod19_UK&quot;                &quot;prod20_Dk&quot;               
+##  [23] &quot;prod21_UK&quot;                &quot;prod22_Fr&quot;               
+##  [25] &quot;prod23_Ger&quot;               &quot;prod24_Dk&quot;               
+##  [27] &quot;prod25_Bel&quot;               &quot;prod26_UK&quot;               
+##  [29] &quot;prod27_Fr&quot;                &quot;prod28_Bel&quot;              
+##  [31] &quot;prod29_Scot&quot;              &quot;prod30_Bel&quot;              
+##  [33] &quot;Who&quot;                      &quot;Frequence&quot;               
+##  [35] &quot;When&quot;                     &quot;Taste&quot;                   
+##  [37] &quot;Healthy&quot;                  &quot;Pleasure&quot;                
+##  [39] &quot;No.preparation&quot;           &quot;Ways&quot;                    
+##  [41] &quot;Guest&quot;                    &quot;Authentic&quot;               
+##  [43] &quot;Not.expensive&quot;            &quot;Supermarket&quot;             
+##  [45] &quot;Deli&quot;                     &quot;Caterer&quot;                 
+##  [47] &quot;Fish.shop&quot;                &quot;Market&quot;                  
+##  [49] &quot;Mobile.van&quot;               &quot;Everyday&quot;                
+##  [51] &quot;Special&quot;                  &quot;Day.snack&quot;               
+##  [53] &quot;Evening.snack&quot;            &quot;Aperitif&quot;                
+##  [55] &quot;Starter&quot;                  &quot;Salad&quot;                   
+##  [57] &quot;Cooked.meal&quot;              &quot;Sandwich&quot;                
+##  [59] &quot;Main&quot;                     &quot;Vegetable&quot;               
+##  [61] &quot;Lemon&quot;                    &quot;Bread, butter&quot;           
+##  [63] &quot;Lemon, bread, butter&quot;     &quot;Crême fraîche&quot;           
+##  [65] &quot;Crême fraîche with herbs&quot; &quot;Fresh cheese&quot;            
+##  [67] &quot;Fresh.cheese.with.herbs&quot;  &quot;Shallots&quot;                
+##  [69] &quot;Mustard&quot;                  &quot;Butter&quot;                  
+##  [71] &quot;Black.pepper&quot;             &quot;Horseradish&quot;             
+##  [73] &quot;Scottish&quot;                 &quot;Norwegian&quot;               
+##  [75] &quot;Atlantic&quot;                 &quot;Irish&quot;                   
+##  [77] &quot;Wild&quot;                     &quot;Do.not.know&quot;             
+##  [79] &quot;Colour&quot;                   &quot;Price&quot;                   
+##  [81] &quot;Origin&quot;                   &quot;Brand&quot;                   
+##  [83] &quot;Advertising&quot;              &quot;Glossiness&quot;              
+##  [85] &quot;Packaging&quot;                &quot;Labelling.information&quot;   
+##  [87] &quot;Number.slices&quot;            &quot;Weight&quot;                  
+##  [89] &quot;Use.by.date&quot;              &quot;Usual.brand&quot;             
+##  [91] &quot;Appetising&quot;               &quot;Firm&quot;                    
+##  [93] &quot;Regular&quot;                  &quot;Nice.colour&quot;             
+##  [95] &quot;Nice.odour&quot;               &quot;Smooth.texture&quot;          
+##  [97] &quot;Firm.texture&quot;             &quot;Greasy.mouth&quot;            
+##  [99] &quot;Characteristic.taste&quot;     &quot;Not too salty&quot;</code></pre>
+<div class="sourceCode" id="cb59"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb59-1"><a href="understanding-the-data-from-a-consumer-perspective.html#cb59-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Labels of the variables</span></span>
+<span id="cb59-2"><a href="understanding-the-data-from-a-consumer-perspective.html#cb59-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(labelled)</span>
+<span id="cb59-3"><a href="understanding-the-data-from-a-consumer-perspective.html#cb59-3" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(salmon_hedo_conso<span class="sc">$</span>Pleasure)</span></code></pre></div>
+<pre><code>##  Factor w/ 5 levels &quot;Comp. Agree&quot;,..: 1 1 1 1 1 1 1 1 3 3 ...</code></pre>
+<div class="sourceCode" id="cb61"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb61-1"><a href="understanding-the-data-from-a-consumer-perspective.html#cb61-1" aria-hidden="true" tabindex="-1"></a><span class="fu">var_label</span>(salmon_hedo_conso<span class="sc">$</span>Pleasure) <span class="ot">&lt;-</span> <span class="st">&quot;I eat smoked salmon because it is a product which gives me pleasure&quot;</span></span>
+<span id="cb61-2"><a href="understanding-the-data-from-a-consumer-perspective.html#cb61-2" aria-hidden="true" tabindex="-1"></a><span class="fu">var_label</span>(salmon_hedo_conso<span class="sc">$</span>Pleasure)</span></code></pre></div>
+<pre><code>## [1] &quot;I eat smoked salmon because it is a product which gives me pleasure&quot;</code></pre>
+<div class="sourceCode" id="cb63"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb63-1"><a href="understanding-the-data-from-a-consumer-perspective.html#cb63-1" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(salmon_hedo_conso<span class="sc">$</span>Pleasure)</span></code></pre></div>
+<pre><code>##  Factor w/ 5 levels &quot;Comp. Agree&quot;,..: 1 1 1 1 1 1 1 1 3 3 ...
+##  - attr(*, &quot;label&quot;)= chr &quot;I eat smoked salmon because it is a product which gives me pleasure&quot;</code></pre>
+<div class="sourceCode" id="cb65"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb65-1"><a href="understanding-the-data-from-a-consumer-perspective.html#cb65-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Changing the order of the levels</span></span>
+<span id="cb65-2"><a href="understanding-the-data-from-a-consumer-perspective.html#cb65-2" aria-hidden="true" tabindex="-1"></a><span class="co">#Before</span></span>
+<span id="cb65-3"><a href="understanding-the-data-from-a-consumer-perspective.html#cb65-3" aria-hidden="true" tabindex="-1"></a><span class="fu">levels</span>(salmon_hedo_conso<span class="sc">$</span>Pleasure)</span></code></pre></div>
+<pre><code>## [1] &quot;Comp. Agree&quot; &quot;Comp. Disa.&quot; &quot;Most. Agree&quot; &quot;Most. Disa.&quot; &quot;Neither&quot;</code></pre>
+<div class="sourceCode" id="cb67"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb67-1"><a href="understanding-the-data-from-a-consumer-perspective.html#cb67-1" aria-hidden="true" tabindex="-1"></a><span class="fu">describe</span>(salmon_hedo_conso<span class="sc">$</span>Pleasure)</span></code></pre></div>
+<pre><code>## [1062 obs.] I eat smoked salmon because it is a product which gives me pleasure
+## nominal factor: &quot;Comp. Agree&quot; &quot;Comp. Agree&quot; &quot;Comp. Agree&quot; &quot;Comp. Agree&quot; &quot;Comp. Agree&quot; &quot;Comp. Agree&quot; &quot;Comp. Agree&quot; &quot;Comp. Agree&quot; &quot;Most. Agree&quot; &quot;Most. Agree&quot; ...
+## 5 levels: Comp. Agree | Comp. Disa. | Most. Agree | Most. Disa. | Neither
+## NAs: 0 (0%)
+## 
+##                n     %
+## Comp. Agree  509  47.9
+## Comp. Disa.   16   1.5
+## Most. Agree  386  36.3
+## Most. Disa.   27   2.5
+## Neither      124  11.7
+## Total       1062 100.0</code></pre>
+<div class="sourceCode" id="cb69"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb69-1"><a href="understanding-the-data-from-a-consumer-perspective.html#cb69-1" aria-hidden="true" tabindex="-1"></a><span class="co">#plot(salmon_hedo_conso$Pleasure)</span></span>
+<span id="cb69-2"><a href="understanding-the-data-from-a-consumer-perspective.html#cb69-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb69-3"><a href="understanding-the-data-from-a-consumer-perspective.html#cb69-3" aria-hidden="true" tabindex="-1"></a><span class="co">#After</span></span>
+<span id="cb69-4"><a href="understanding-the-data-from-a-consumer-perspective.html#cb69-4" aria-hidden="true" tabindex="-1"></a>salmon_hedo_conso<span class="sc">$</span>Pleasure <span class="ot">&lt;-</span> <span class="fu">factor</span>(salmon_hedo_conso<span class="sc">$</span>Pleasure, <span class="at">levels=</span><span class="fu">c</span>(<span class="st">&quot;Comp. Disa.&quot;</span>,<span class="st">&quot;Most. Disa.&quot;</span>,<span class="st">&quot;Neither&quot;</span>, <span class="st">&quot;Most. Agree&quot;</span>,<span class="st">&quot;Comp. Agree&quot;</span>))</span>
+<span id="cb69-5"><a href="understanding-the-data-from-a-consumer-perspective.html#cb69-5" aria-hidden="true" tabindex="-1"></a><span class="fu">levels</span>(salmon_hedo_conso<span class="sc">$</span>Pleasure)</span></code></pre></div>
+<pre><code>## [1] &quot;Comp. Disa.&quot; &quot;Most. Disa.&quot; &quot;Neither&quot;     &quot;Most. Agree&quot; &quot;Comp. Agree&quot;</code></pre>
+<div class="sourceCode" id="cb71"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb71-1"><a href="understanding-the-data-from-a-consumer-perspective.html#cb71-1" aria-hidden="true" tabindex="-1"></a><span class="fu">describe</span>(salmon_hedo_conso<span class="sc">$</span>Pleasure)</span></code></pre></div>
+<pre><code>## [1062 obs.] 
+## nominal factor: &quot;Comp. Agree&quot; &quot;Comp. Agree&quot; &quot;Comp. Agree&quot; &quot;Comp. Agree&quot; &quot;Comp. Agree&quot; &quot;Comp. Agree&quot; &quot;Comp. Agree&quot; &quot;Comp. Agree&quot; &quot;Most. Agree&quot; &quot;Most. Agree&quot; ...
+## 5 levels: Comp. Disa. | Most. Disa. | Neither | Most. Agree | Comp. Agree
+## NAs: 0 (0%)
+## 
+##                n     %
+## Comp. Disa.   16   1.5
+## Most. Disa.   27   2.5
+## Neither      124  11.7
+## Most. Agree  386  36.3
+## Comp. Agree  509  47.9
+## Total       1062 100.0</code></pre>
+<div class="sourceCode" id="cb73"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb73-1"><a href="understanding-the-data-from-a-consumer-perspective.html#cb73-1" aria-hidden="true" tabindex="-1"></a><span class="co">#plot(salmon_hedo_conso$Pleasure)</span></span></code></pre></div>
+<p>You may also want to use this interactive alternative.</p>
+<div class="sourceCode" id="cb74"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb74-1"><a href="understanding-the-data-from-a-consumer-perspective.html#cb74-1" aria-hidden="true" tabindex="-1"></a><span class="fu">iorder</span>(salmon_hedo_conso,<span class="st">&quot;Who&quot;</span>)</span></code></pre></div>
+<p>Now, let’s have a look at some graphical representation.</p>
+<div class="sourceCode" id="cb75"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb75-1"><a href="understanding-the-data-from-a-consumer-perspective.html#cb75-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Graphical representation (level 1)</span></span>
+<span id="cb75-2"><a href="understanding-the-data-from-a-consumer-perspective.html#cb75-2" aria-hidden="true" tabindex="-1"></a>salmon_hedo_conso<span class="sc">$</span>Country[<span class="dv">1</span><span class="sc">:</span><span class="dv">100</span>]</span></code></pre></div>
+<pre><code>##   [1] Lyon Lyon Lyon Lyon Lyon Lyon Lyon Lyon Lyon Lyon Lyon Lyon Lyon Lyon Lyon
+##  [16] Lyon Lyon Lyon Lyon Lyon Lyon Lyon Lyon Lyon Lyon Lyon Lyon Lyon Lyon Lyon
+##  [31] Lyon Lyon Lyon Lyon Lyon Lyon Lyon Lyon Lyon Lyon Lyon Lyon Lyon Lyon Lyon
+##  [46] Lyon Lyon Lyon Lyon Lyon Lyon Lyon Lyon Lyon Lyon Lyon Lyon Lyon Lyon Lyon
+##  [61] Lyon Lyon Lyon Lyon Lyon Lyon Lyon Lyon Lyon Lyon Lyon Lyon Lyon Lyon Lyon
+##  [76] Lyon Lyon Lyon Lyon Lyon Lyon Lyon Lyon Lyon Lyon Lyon Lyon Lyon Lyon Lyon
+##  [91] Lyon Lyon Lyon Lyon Lyon Lyon Lyon Lyon Lyon Lyon
+## 11 Levels: Bremerhaven BXL F Lyon Milan Munchen Nantes Rome Sittingbourne ... Whitley bay</code></pre>
+<div class="sourceCode" id="cb77"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb77-1"><a href="understanding-the-data-from-a-consumer-perspective.html#cb77-1" aria-hidden="true" tabindex="-1"></a><span class="co">#plot(salmon_hedo_conso$Country)</span></span></code></pre></div>
+<p><strong>Exercise. </strong>Please, comment on this alternative.</p>
+<div class="sourceCode" id="cb78"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb78-1"><a href="understanding-the-data-from-a-consumer-perspective.html#cb78-1" aria-hidden="true" tabindex="-1"></a><span class="co">#table uses the cross-classifying factors to build a contingency table of the counts at each combination of factor levels</span></span>
+<span id="cb78-2"><a href="understanding-the-data-from-a-consumer-perspective.html#cb78-2" aria-hidden="true" tabindex="-1"></a>bp <span class="ot">&lt;-</span> <span class="fu">table</span>(salmon_hedo_conso<span class="sc">$</span>Country) </span>
+<span id="cb78-3"><a href="understanding-the-data-from-a-consumer-perspective.html#cb78-3" aria-hidden="true" tabindex="-1"></a>bp</span>
+<span id="cb78-4"><a href="understanding-the-data-from-a-consumer-perspective.html#cb78-4" aria-hidden="true" tabindex="-1"></a><span class="fu">barplot</span>(bp)</span>
+<span id="cb78-5"><a href="understanding-the-data-from-a-consumer-perspective.html#cb78-5" aria-hidden="true" tabindex="-1"></a>bp <span class="ot">&lt;-</span> <span class="fu">sort</span>(bp,<span class="at">decreasing =</span> F)</span>
+<span id="cb78-6"><a href="understanding-the-data-from-a-consumer-perspective.html#cb78-6" aria-hidden="true" tabindex="-1"></a>bp</span>
+<span id="cb78-7"><a href="understanding-the-data-from-a-consumer-perspective.html#cb78-7" aria-hidden="true" tabindex="-1"></a><span class="fu">barplot</span>(bp)</span></code></pre></div>
+<p><strong>Exercise. </strong>Please, run the following code.</p>
+<div class="sourceCode" id="cb79"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb79-1"><a href="understanding-the-data-from-a-consumer-perspective.html#cb79-1" aria-hidden="true" tabindex="-1"></a><span class="co">#When crossing two variables</span></span>
+<span id="cb79-2"><a href="understanding-the-data-from-a-consumer-perspective.html#cb79-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(saumon_hedo_conso<span class="sc">$</span><span class="st">&quot;Bread, butter&quot;</span>)</span>
+<span id="cb79-3"><a href="understanding-the-data-from-a-consumer-perspective.html#cb79-3" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(saumon_hedo_conso<span class="sc">$</span><span class="st">&quot;Bread, butter&quot;</span>,saumon_hedo_conso<span class="sc">$</span>prod2)</span></code></pre></div>
+<p>Now, let’s have a look at a more professional graphical output.</p>
+<div class="sourceCode" id="cb80"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb80-1"><a href="understanding-the-data-from-a-consumer-perspective.html#cb80-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Graphical representation (level 2)</span></span>
+<span id="cb80-2"><a href="understanding-the-data-from-a-consumer-perspective.html#cb80-2" aria-hidden="true" tabindex="-1"></a>bp <span class="ot">&lt;-</span> <span class="fu">table</span>(salmon_hedo_conso<span class="sc">$</span>Country) </span>
+<span id="cb80-3"><a href="understanding-the-data-from-a-consumer-perspective.html#cb80-3" aria-hidden="true" tabindex="-1"></a>bp <span class="ot">&lt;-</span> <span class="fu">sort</span>(bp,<span class="at">decreasing =</span> F)</span>
+<span id="cb80-4"><a href="understanding-the-data-from-a-consumer-perspective.html#cb80-4" aria-hidden="true" tabindex="-1"></a><span class="co">#Step 1</span></span>
+<span id="cb80-5"><a href="understanding-the-data-from-a-consumer-perspective.html#cb80-5" aria-hidden="true" tabindex="-1"></a><span class="fu">par</span>(<span class="at">omi=</span><span class="fu">c</span>(<span class="fl">0.65</span>,<span class="fl">0.25</span>,<span class="fl">0.75</span>,<span class="fl">0.75</span>) ,<span class="at">mai=</span><span class="fu">c</span>(<span class="fl">0.3</span>,<span class="dv">2</span>,<span class="fl">0.35</span>,<span class="dv">0</span>) ,<span class="at">mgp=</span><span class="fu">c</span>(<span class="dv">3</span>,<span class="dv">3</span>,<span class="dv">0</span>), <span class="at">las=</span><span class="dv">1</span>)</span>
+<span id="cb80-6"><a href="understanding-the-data-from-a-consumer-perspective.html#cb80-6" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="fu">barplot</span>(bp,<span class="at">names.arg=</span>F,<span class="at">horiz=</span>T,<span class="at">border=</span><span class="cn">NA</span>,<span class="at">xlim=</span><span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">120</span>), <span class="at">col=</span><span class="st">&quot;grey&quot;</span>, <span class="at">cex.names=</span><span class="fl">0.85</span>,<span class="at">axes=</span>F)</span>
+<span id="cb80-7"><a href="understanding-the-data-from-a-consumer-perspective.html#cb80-7" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="fu">length</span>(bp))</span>
+<span id="cb80-8"><a href="understanding-the-data-from-a-consumer-perspective.html#cb80-8" aria-hidden="true" tabindex="-1"></a>{</span>
+<span id="cb80-9"><a href="understanding-the-data-from-a-consumer-perspective.html#cb80-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">text</span>(<span class="sc">-</span><span class="dv">18</span>,x[i],<span class="fu">names</span>(bp)[i],<span class="at">xpd=</span>T,<span class="at">adj=</span><span class="dv">1</span>,<span class="at">cex=</span><span class="fl">0.85</span>) </span>
+<span id="cb80-10"><a href="understanding-the-data-from-a-consumer-perspective.html#cb80-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">text</span>(<span class="sc">-</span><span class="fl">3.5</span>,x[i],bp[i],<span class="at">xpd=</span>T,<span class="at">adj=</span><span class="dv">1</span>,<span class="at">cex=</span><span class="fl">0.85</span>) </span>
+<span id="cb80-11"><a href="understanding-the-data-from-a-consumer-perspective.html#cb80-11" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb80-12"><a href="understanding-the-data-from-a-consumer-perspective.html#cb80-12" aria-hidden="true" tabindex="-1"></a><span class="fu">rect</span>(<span class="dv">0</span>,<span class="sc">-</span><span class="fl">0.5</span>,<span class="dv">20</span>,<span class="dv">28</span>,<span class="at">col=</span><span class="fu">rgb</span>(<span class="dv">191</span>,<span class="dv">239</span>,<span class="dv">255</span>,<span class="dv">80</span>, <span class="at">maxColorValue=</span><span class="dv">255</span>), <span class="at">border=</span><span class="cn">NA</span>)</span>
+<span id="cb80-13"><a href="understanding-the-data-from-a-consumer-perspective.html#cb80-13" aria-hidden="true" tabindex="-1"></a><span class="fu">rect</span>(<span class="dv">20</span>,<span class="sc">-</span><span class="fl">0.5</span>,<span class="dv">40</span>,<span class="dv">28</span>,<span class="at">col=</span><span class="fu">rgb</span>(<span class="dv">191</span>,<span class="dv">239</span>,<span class="dv">255</span>,<span class="dv">120</span>, <span class="at">maxColorValue=</span><span class="dv">255</span>), <span class="at">border=</span><span class="cn">NA</span>)</span>
+<span id="cb80-14"><a href="understanding-the-data-from-a-consumer-perspective.html#cb80-14" aria-hidden="true" tabindex="-1"></a><span class="fu">rect</span>(<span class="dv">40</span>,<span class="sc">-</span><span class="fl">0.5</span>,<span class="dv">60</span>,<span class="dv">28</span>,<span class="at">col=</span><span class="fu">rgb</span>(<span class="dv">191</span>,<span class="dv">239</span>,<span class="dv">255</span>,<span class="dv">80</span>,<span class="at">maxColorValue=</span><span class="dv">255</span>), <span class="at">border=</span><span class="cn">NA</span>)</span>
+<span id="cb80-15"><a href="understanding-the-data-from-a-consumer-perspective.html#cb80-15" aria-hidden="true" tabindex="-1"></a><span class="fu">rect</span>(<span class="dv">60</span>,<span class="sc">-</span><span class="fl">0.5</span>,<span class="dv">80</span>,<span class="dv">28</span>,<span class="at">col=</span><span class="fu">rgb</span>(<span class="dv">191</span>,<span class="dv">239</span>,<span class="dv">255</span>,<span class="dv">120</span>, <span class="at">maxColorValue=</span><span class="dv">255</span>), <span class="at">border=</span><span class="cn">NA</span>)</span>
+<span id="cb80-16"><a href="understanding-the-data-from-a-consumer-perspective.html#cb80-16" aria-hidden="true" tabindex="-1"></a><span class="fu">rect</span>(<span class="dv">80</span>,<span class="sc">-</span><span class="fl">0.5</span>,<span class="dv">100</span>,<span class="dv">28</span>, <span class="at">col=</span><span class="fu">rgb</span>(<span class="dv">191</span>,<span class="dv">239</span>,<span class="dv">255</span>,<span class="dv">80</span>, <span class="at">maxColorValue =</span><span class="dv">255</span>), <span class="at">border=</span><span class="cn">NA</span>)</span>
+<span id="cb80-17"><a href="understanding-the-data-from-a-consumer-perspective.html#cb80-17" aria-hidden="true" tabindex="-1"></a><span class="fu">rect</span>(<span class="dv">100</span>,<span class="sc">-</span><span class="fl">0.5</span>,<span class="dv">120</span>,<span class="dv">28</span>, <span class="at">col=</span><span class="fu">rgb</span>(<span class="dv">191</span>,<span class="dv">239</span>,<span class="dv">255</span>,<span class="dv">80</span>, <span class="at">maxColorValue =</span><span class="dv">255</span>), <span class="at">border=</span><span class="cn">NA</span>)</span>
+<span id="cb80-18"><a href="understanding-the-data-from-a-consumer-perspective.html#cb80-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb80-19"><a href="understanding-the-data-from-a-consumer-perspective.html#cb80-19" aria-hidden="true" tabindex="-1"></a>myValue2<span class="ot">&lt;-</span><span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">0</span>,<span class="dv">73</span>,<span class="dv">0</span>,<span class="dv">0</span>,<span class="dv">0</span>,<span class="dv">0</span>,<span class="dv">0</span>,<span class="dv">113</span>,<span class="dv">0</span>,<span class="dv">0</span>)</span>
+<span id="cb80-20"><a href="understanding-the-data-from-a-consumer-perspective.html#cb80-20" aria-hidden="true" tabindex="-1"></a>myColour2 <span class="ot">&lt;-</span><span class="fu">rgb</span>(<span class="dv">255</span>,<span class="dv">0</span>,<span class="dv">210</span>, <span class="at">maxColorValue =</span><span class="dv">255</span>)</span>
+<span id="cb80-21"><a href="understanding-the-data-from-a-consumer-perspective.html#cb80-21" aria-hidden="true" tabindex="-1"></a>x2<span class="ot">&lt;-</span> <span class="fu">barplot</span>(myValue2,<span class="at">names.arg=</span>F,<span class="at">horiz=</span>T,<span class="at">border=</span><span class="cn">NA</span>,<span class="at">xlim=</span><span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">120</span>),<span class="at">col=</span>myColour2,<span class="at">cex.names=</span><span class="fl">0.85</span>,<span class="at">axes=</span>F,<span class="at">add=</span>T)</span>
+<span id="cb80-22"><a href="understanding-the-data-from-a-consumer-perspective.html#cb80-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb80-23"><a href="understanding-the-data-from-a-consumer-perspective.html#cb80-23" aria-hidden="true" tabindex="-1"></a><span class="co">#Step 2</span></span>
+<span id="cb80-24"><a href="understanding-the-data-from-a-consumer-perspective.html#cb80-24" aria-hidden="true" tabindex="-1"></a>m <span class="ot">&lt;-</span> <span class="fu">mean</span>(bp) <span class="co">#The mean function</span></span>
+<span id="cb80-25"><a href="understanding-the-data-from-a-consumer-perspective.html#cb80-25" aria-hidden="true" tabindex="-1"></a><span class="fu">arrows</span>(m,<span class="sc">-</span><span class="fl">0.5</span>,m,<span class="dv">14</span>, <span class="at">lwd=</span><span class="fl">1.5</span>,<span class="at">length=</span><span class="dv">0</span>,<span class="at">xpd=</span>T,<span class="at">col=</span><span class="st">&quot;skyblue3&quot;</span>)</span>
+<span id="cb80-26"><a href="understanding-the-data-from-a-consumer-perspective.html#cb80-26" aria-hidden="true" tabindex="-1"></a><span class="fu">arrows</span>(m,<span class="sc">-</span><span class="fl">0.5</span>,m,<span class="sc">-</span><span class="fl">0.75</span>,<span class="at">lwd=</span><span class="dv">3</span>,<span class="at">length=</span><span class="dv">0</span>,<span class="at">xpd=</span>T)</span>
+<span id="cb80-27"><a href="understanding-the-data-from-a-consumer-perspective.html#cb80-27" aria-hidden="true" tabindex="-1"></a><span class="fu">arrows</span>(m,<span class="dv">14</span>,m,<span class="fl">14.25</span>, <span class="at">lwd=</span><span class="dv">3</span>,<span class="at">length=</span><span class="dv">0</span>,<span class="at">xpd=</span>T) </span>
+<span id="cb80-28"><a href="understanding-the-data-from-a-consumer-perspective.html#cb80-28" aria-hidden="true" tabindex="-1"></a><span class="fu">text</span>(m<span class="dv">-18</span>,<span class="fl">14.5</span>,<span class="st">&quot;Average&quot;</span>,<span class="at">adj=</span><span class="dv">1</span>,<span class="at">xpd=</span>T,<span class="at">cex=</span><span class="fl">0.65</span>,<span class="at">font=</span><span class="dv">3</span>) </span>
+<span id="cb80-29"><a href="understanding-the-data-from-a-consumer-perspective.html#cb80-29" aria-hidden="true" tabindex="-1"></a><span class="fu">text</span>(m<span class="dv">-3</span>,<span class="fl">14.5</span>,<span class="st">&quot;96.5&quot;</span>,<span class="at">adj=</span><span class="dv">1</span>,<span class="at">xpd=</span>T,<span class="at">cex=</span><span class="fl">0.65</span>,<span class="at">font=</span><span class="dv">4</span>) </span>
+<span id="cb80-30"><a href="understanding-the-data-from-a-consumer-perspective.html#cb80-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb80-31"><a href="understanding-the-data-from-a-consumer-perspective.html#cb80-31" aria-hidden="true" tabindex="-1"></a><span class="co">#Step 3</span></span>
+<span id="cb80-32"><a href="understanding-the-data-from-a-consumer-perspective.html#cb80-32" aria-hidden="true" tabindex="-1"></a><span class="fu">mtext</span>(<span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">20</span>,<span class="dv">40</span>,<span class="dv">60</span>,<span class="dv">80</span>,<span class="dv">100</span>) ,<span class="at">at=</span><span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">20</span>,<span class="dv">40</span>,<span class="dv">60</span>,<span class="dv">80</span>,<span class="dv">100</span>),<span class="dv">1</span>,<span class="at">line=</span><span class="dv">0</span>,<span class="at">cex=</span><span class="fl">0.80</span>)</span>
+<span id="cb80-33"><a href="understanding-the-data-from-a-consumer-perspective.html#cb80-33" aria-hidden="true" tabindex="-1"></a><span class="fu">mtext</span>(<span class="st">&quot;European survey on consumers habits&quot;</span>,<span class="dv">3</span>,<span class="at">line=</span><span class="fl">1.3</span>,<span class="at">adj=</span><span class="dv">0</span>,<span class="at">cex=</span><span class="fl">1.1</span>,<span class="at">outer=</span>T)</span>
+<span id="cb80-34"><a href="understanding-the-data-from-a-consumer-perspective.html#cb80-34" aria-hidden="true" tabindex="-1"></a><span class="fu">mtext</span>(<span class="st">&quot;European project EUROSALMON&quot;</span>,<span class="dv">3</span>,<span class="at">line=</span><span class="sc">-</span><span class="fl">0.4</span>,<span class="at">adj=</span><span class="dv">0</span>,<span class="at">cex=</span><span class="fl">0.9</span>,<span class="at">outer=</span>T) </span>
+<span id="cb80-35"><a href="understanding-the-data-from-a-consumer-perspective.html#cb80-35" aria-hidden="true" tabindex="-1"></a><span class="fu">mtext</span>(<span class="st">&quot;MATRA - IFREMER - ADRIANT&quot;</span>,<span class="dv">1</span>,<span class="at">line=</span><span class="dv">1</span>,<span class="at">adj=</span><span class="fl">1.0</span>,<span class="at">cex=</span><span class="fl">0.65</span>,<span class="at">outer=</span>T,<span class="at">font=</span><span class="dv">3</span>)</span></code></pre></div>
+<p><img src="salmon_files/figure-html/unnamed-chunk-26-1.png" width="672" /></p>
+</div>
+<div id="understanding-the-consumers-behaviour" class="section level2" number="2.2">
+<h2><span class="header-section-number">2.2</span> Understanding the consumers’ behaviour</h2>
+<p>In this part, we’re going to play with the questionnaire data. These data are categorical, and you have to use a specific method for these particular data: Multiple Correspondence Analysis (MCA).</p>
+<div class="sourceCode" id="cb81"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb81-1"><a href="understanding-the-data-from-a-consumer-perspective.html#cb81-1" aria-hidden="true" tabindex="-1"></a><span class="fu">colnames</span>(salmon_hedo_conso)</span></code></pre></div>
+<pre><code>##   [1] &quot;IKIDEN&quot;                   &quot;Country&quot;                 
+##   [3] &quot;prod1_Fr&quot;                 &quot;prod2_Fr&quot;                
+##   [5] &quot;prod3_Fr&quot;                 &quot;prod4_Scot&quot;              
+##   [7] &quot;prod5_Ger&quot;                &quot;prod6_Ire&quot;               
+##   [9] &quot;prod7_Ire&quot;                &quot;prod8_Ger&quot;               
+##  [11] &quot;prod9_Ire&quot;                &quot;prod10_It&quot;               
+##  [13] &quot;prod11_Fr&quot;                &quot;prod12_Dk&quot;               
+##  [15] &quot;prod13_Ger&quot;               &quot;prod14_Ger&quot;              
+##  [17] &quot;prod15_Fr&quot;                &quot;prod16_Ger&quot;              
+##  [19] &quot;prod17_Fr&quot;                &quot;prod18_UK&quot;               
+##  [21] &quot;prod19_UK&quot;                &quot;prod20_Dk&quot;               
+##  [23] &quot;prod21_UK&quot;                &quot;prod22_Fr&quot;               
+##  [25] &quot;prod23_Ger&quot;               &quot;prod24_Dk&quot;               
+##  [27] &quot;prod25_Bel&quot;               &quot;prod26_UK&quot;               
+##  [29] &quot;prod27_Fr&quot;                &quot;prod28_Bel&quot;              
+##  [31] &quot;prod29_Scot&quot;              &quot;prod30_Bel&quot;              
+##  [33] &quot;Who&quot;                      &quot;Frequence&quot;               
+##  [35] &quot;When&quot;                     &quot;Taste&quot;                   
+##  [37] &quot;Healthy&quot;                  &quot;Pleasure&quot;                
+##  [39] &quot;No.preparation&quot;           &quot;Ways&quot;                    
+##  [41] &quot;Guest&quot;                    &quot;Authentic&quot;               
+##  [43] &quot;Not.expensive&quot;            &quot;Supermarket&quot;             
+##  [45] &quot;Deli&quot;                     &quot;Caterer&quot;                 
+##  [47] &quot;Fish.shop&quot;                &quot;Market&quot;                  
+##  [49] &quot;Mobile.van&quot;               &quot;Everyday&quot;                
+##  [51] &quot;Special&quot;                  &quot;Day.snack&quot;               
+##  [53] &quot;Evening.snack&quot;            &quot;Aperitif&quot;                
+##  [55] &quot;Starter&quot;                  &quot;Salad&quot;                   
+##  [57] &quot;Cooked.meal&quot;              &quot;Sandwich&quot;                
+##  [59] &quot;Main&quot;                     &quot;Vegetable&quot;               
+##  [61] &quot;Lemon&quot;                    &quot;Bread, butter&quot;           
+##  [63] &quot;Lemon, bread, butter&quot;     &quot;Crême fraîche&quot;           
+##  [65] &quot;Crême fraîche with herbs&quot; &quot;Fresh cheese&quot;            
+##  [67] &quot;Fresh.cheese.with.herbs&quot;  &quot;Shallots&quot;                
+##  [69] &quot;Mustard&quot;                  &quot;Butter&quot;                  
+##  [71] &quot;Black.pepper&quot;             &quot;Horseradish&quot;             
+##  [73] &quot;Scottish&quot;                 &quot;Norwegian&quot;               
+##  [75] &quot;Atlantic&quot;                 &quot;Irish&quot;                   
+##  [77] &quot;Wild&quot;                     &quot;Do.not.know&quot;             
+##  [79] &quot;Colour&quot;                   &quot;Price&quot;                   
+##  [81] &quot;Origin&quot;                   &quot;Brand&quot;                   
+##  [83] &quot;Advertising&quot;              &quot;Glossiness&quot;              
+##  [85] &quot;Packaging&quot;                &quot;Labelling.information&quot;   
+##  [87] &quot;Number.slices&quot;            &quot;Weight&quot;                  
+##  [89] &quot;Use.by.date&quot;              &quot;Usual.brand&quot;             
+##  [91] &quot;Appetising&quot;               &quot;Firm&quot;                    
+##  [93] &quot;Regular&quot;                  &quot;Nice.colour&quot;             
+##  [95] &quot;Nice.odour&quot;               &quot;Smooth.texture&quot;          
+##  [97] &quot;Firm.texture&quot;             &quot;Greasy.mouth&quot;            
+##  [99] &quot;Characteristic.taste&quot;     &quot;Not too salty&quot;</code></pre>
+<div class="sourceCode" id="cb83"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb83-1"><a href="understanding-the-data-from-a-consumer-perspective.html#cb83-1" aria-hidden="true" tabindex="-1"></a>res.mca <span class="ot">&lt;-</span> <span class="fu">MCA</span>(salmon_hedo_conso[,<span class="dv">33</span><span class="sc">:</span><span class="dv">100</span>],<span class="at">graph=</span>F)</span>
+<span id="cb83-2"><a href="understanding-the-data-from-a-consumer-perspective.html#cb83-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plot.MCA</span>(res.mca,<span class="at">choix=</span><span class="st">&quot;ind&quot;</span>,<span class="at">invisible =</span> <span class="st">&quot;var&quot;</span>,<span class="at">label=</span><span class="st">&quot;none&quot;</span>,<span class="at">graph.type =</span> <span class="st">&quot;classic&quot;</span>)</span></code></pre></div>
+<p><img src="salmon_files/figure-html/unnamed-chunk-27-1.png" width="672" /></p>
+<div class="sourceCode" id="cb84"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb84-1"><a href="understanding-the-data-from-a-consumer-perspective.html#cb84-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot.MCA</span>(res.mca,<span class="at">choix=</span><span class="st">&quot;ind&quot;</span>,<span class="at">invisible =</span> <span class="st">&quot;ind&quot;</span>)</span></code></pre></div>
+<p><img src="salmon_files/figure-html/unnamed-chunk-27-2.png" width="672" /></p>
+<div class="sourceCode" id="cb85"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb85-1"><a href="understanding-the-data-from-a-consumer-perspective.html#cb85-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot.MCA</span>(res.mca,<span class="at">choix=</span><span class="st">&quot;ind&quot;</span>,<span class="at">invisible =</span> <span class="st">&quot;ind&quot;</span>,<span class="at">selectMod=</span><span class="st">&quot;cos2 10&quot;</span>)</span></code></pre></div>
+<pre><code>## Warning: ggrepel: 6 unlabeled data points (too many overlaps). Consider
+## increasing max.overlaps</code></pre>
+<p><img src="salmon_files/figure-html/unnamed-chunk-27-3.png" width="672" /></p>
+<p><strong>Exercise. </strong>Let’s spend some time on these outputs and on the theory behind MCA.</p>
+<p>Now, let’s run <strong>MCA</strong> again with some particular inputs. But before that, let’s have a look at the variance associated with our dimensions.</p>
+<div class="sourceCode" id="cb87"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb87-1"><a href="understanding-the-data-from-a-consumer-perspective.html#cb87-1" aria-hidden="true" tabindex="-1"></a>res.mca<span class="sc">$</span>eig</span></code></pre></div>
+<pre><code>##           eigenvalue percentage of variance cumulative percentage of variance
+## dim 1   5.473825e-02           3.722201e+00                          3.722201
+## dim 2   4.431036e-02           3.013104e+00                          6.735305
+## dim 3   4.003557e-02           2.722419e+00                          9.457724
+## dim 4   3.392450e-02           2.306866e+00                         11.764590
+## dim 5   3.108617e-02           2.113860e+00                         13.878450
+## dim 6   2.967338e-02           2.017790e+00                         15.896239
+## dim 7   2.855847e-02           1.941976e+00                         17.838216
+## dim 8   2.588124e-02           1.759924e+00                         19.598140
+## dim 9   2.528128e-02           1.719127e+00                         21.317267
+## dim 10  2.450188e-02           1.666128e+00                         22.983394
+## dim 11  2.405695e-02           1.635872e+00                         24.619267
+## dim 12  2.287132e-02           1.555249e+00                         26.174516
+## dim 13  2.266484e-02           1.541209e+00                         27.715725
+## dim 14  2.184724e-02           1.485612e+00                         29.201337
+## dim 15  2.143759e-02           1.457756e+00                         30.659094
+## dim 16  2.102278e-02           1.429549e+00                         32.088643
+## dim 17  2.044787e-02           1.390455e+00                         33.479098
+## dim 18  1.973262e-02           1.341818e+00                         34.820916
+## dim 19  1.964806e-02           1.336068e+00                         36.156984
+## dim 20  1.953184e-02           1.328165e+00                         37.485148
+## dim 21  1.901586e-02           1.293078e+00                         38.778227
+## dim 22  1.879663e-02           1.278171e+00                         40.056398
+## dim 23  1.841331e-02           1.252105e+00                         41.308503
+## dim 24  1.808677e-02           1.229901e+00                         42.538403
+## dim 25  1.799709e-02           1.223802e+00                         43.762205
+## dim 26  1.787002e-02           1.215161e+00                         44.977367
+## dim 27  1.760494e-02           1.197136e+00                         46.174503
+## dim 28  1.748220e-02           1.188789e+00                         47.363292
+## dim 29  1.711750e-02           1.163990e+00                         48.527282
+## dim 30  1.687421e-02           1.147446e+00                         49.674728
+## dim 31  1.656551e-02           1.126455e+00                         50.801183
+## dim 32  1.644550e-02           1.118294e+00                         51.919477
+## dim 33  1.615074e-02           1.098251e+00                         53.017728
+## dim 34  1.597042e-02           1.085988e+00                         54.103716
+## dim 35  1.567450e-02           1.065866e+00                         55.169582
+## dim 36  1.562135e-02           1.062252e+00                         56.231834
+## dim 37  1.528656e-02           1.039486e+00                         57.271320
+## dim 38  1.512550e-02           1.028534e+00                         58.299854
+## dim 39  1.498150e-02           1.018742e+00                         59.318596
+## dim 40  1.483964e-02           1.009096e+00                         60.327692
+## dim 41  1.471166e-02           1.000393e+00                         61.328085
+## dim 42  1.436120e-02           9.765616e-01                         62.304646
+## dim 43  1.412491e-02           9.604939e-01                         63.265140
+## dim 44  1.408263e-02           9.576190e-01                         64.222759
+## dim 45  1.394252e-02           9.480915e-01                         65.170850
+## dim 46  1.381506e-02           9.394244e-01                         66.110275
+## dim 47  1.370087e-02           9.316590e-01                         67.041934
+## dim 48  1.358617e-02           9.238597e-01                         67.965794
+## dim 49  1.346130e-02           9.153686e-01                         68.881162
+## dim 50  1.333994e-02           9.071159e-01                         69.788278
+## dim 51  1.307056e-02           8.887983e-01                         70.677076
+## dim 52  1.294615e-02           8.803382e-01                         71.557414
+## dim 53  1.282083e-02           8.718162e-01                         72.429231
+## dim 54  1.262218e-02           8.583081e-01                         73.287539
+## dim 55  1.249028e-02           8.493392e-01                         74.136878
+## dim 56  1.230169e-02           8.365149e-01                         74.973393
+## dim 57  1.215842e-02           8.267726e-01                         75.800166
+## dim 58  1.207068e-02           8.208064e-01                         76.620972
+## dim 59  1.168354e-02           7.944807e-01                         77.415453
+## dim 60  1.161892e-02           7.900864e-01                         78.205539
+## dim 61  1.130664e-02           7.688518e-01                         78.974391
+## dim 62  1.119342e-02           7.611523e-01                         79.735543
+## dim 63  1.111680e-02           7.559427e-01                         80.491486
+## dim 64  1.092116e-02           7.426388e-01                         81.234125
+## dim 65  1.084369e-02           7.373710e-01                         81.971496
+## dim 66  1.067418e-02           7.258442e-01                         82.697340
+## dim 67  1.034072e-02           7.031693e-01                         83.400509
+## dim 68  1.028899e-02           6.996510e-01                         84.100160
+## dim 69  1.017623e-02           6.919836e-01                         84.792144
+## dim 70  1.001043e-02           6.807096e-01                         85.472853
+## dim 71  9.931163e-03           6.753191e-01                         86.148172
+## dim 72  9.819269e-03           6.677103e-01                         86.815883
+## dim 73  9.678037e-03           6.581065e-01                         87.473989
+## dim 74  9.512016e-03           6.468171e-01                         88.120806
+## dim 75  9.192120e-03           6.250642e-01                         88.745870
+## dim 76  8.990496e-03           6.113537e-01                         89.357224
+## dim 77  8.898534e-03           6.051003e-01                         89.962324
+## dim 78  8.784312e-03           5.973332e-01                         90.559658
+## dim 79  8.658067e-03           5.887486e-01                         91.148406
+## dim 80  8.385134e-03           5.701891e-01                         91.718595
+## dim 81  8.362101e-03           5.686229e-01                         92.287218
+## dim 82  8.224928e-03           5.592951e-01                         92.846513
+## dim 83  8.045518e-03           5.470952e-01                         93.393609
+## dim 84  7.965330e-03           5.416425e-01                         93.935251
+## dim 85  7.684237e-03           5.225281e-01                         94.457779
+## dim 86  7.538355e-03           5.126081e-01                         94.970387
+## dim 87  7.383017e-03           5.020451e-01                         95.472432
+## dim 88  7.252892e-03           4.931967e-01                         95.965629
+## dim 89  7.029512e-03           4.780068e-01                         96.443636
+## dim 90  6.974460e-03           4.742633e-01                         96.917899
+## dim 91  6.646082e-03           4.519336e-01                         97.369833
+## dim 92  6.334576e-03           4.307511e-01                         97.800584
+## dim 93  6.128442e-03           4.167340e-01                         98.217318
+## dim 94  5.857748e-03           3.983269e-01                         98.615645
+## dim 95  5.560695e-03           3.781273e-01                         98.993772
+## dim 96  4.696508e-03           3.193625e-01                         99.313135
+## dim 97  4.314317e-03           2.933735e-01                         99.606508
+## dim 98  3.334220e-03           2.267270e-01                         99.833235
+## dim 99  2.452426e-03           1.667650e-01                        100.000000
+## dim 100 1.016417e-30           6.911637e-29                        100.000000</code></pre>
+<p>In the following code, we store the results from the 50 first dimensions, and we get rid of the categories that are not chosen, according to a given threshold.</p>
+<div class="sourceCode" id="cb89"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb89-1"><a href="understanding-the-data-from-a-consumer-perspective.html#cb89-1" aria-hidden="true" tabindex="-1"></a>res.mca <span class="ot">&lt;-</span> <span class="fu">MCA</span>(salmon_hedo_conso[,<span class="fu">c</span>(<span class="dv">2</span>,<span class="dv">33</span><span class="sc">:</span><span class="dv">100</span>)],<span class="at">quali.sup=</span><span class="dv">1</span>,<span class="at">graph=</span>F,<span class="at">ncp=</span><span class="dv">50</span>,<span class="at">level.ventil=</span><span class="fl">0.05</span>)</span></code></pre></div>
+<p><strong>Exercise. </strong>Let’s give some interpretation to the results.</p>
+<div class="sourceCode" id="cb90"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb90-1"><a href="understanding-the-data-from-a-consumer-perspective.html#cb90-1" aria-hidden="true" tabindex="-1"></a>res.dim <span class="ot">&lt;-</span> <span class="fu">dimdesc</span>(res.mca)</span>
+<span id="cb90-2"><a href="understanding-the-data-from-a-consumer-perspective.html#cb90-2" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(res.dim)</span>
+<span id="cb90-3"><a href="understanding-the-data-from-a-consumer-perspective.html#cb90-3" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(res.dim<span class="sc">$</span><span class="st">`</span><span class="at">Dim 1</span><span class="st">`</span>)</span>
+<span id="cb90-4"><a href="understanding-the-data-from-a-consumer-perspective.html#cb90-4" aria-hidden="true" tabindex="-1"></a>res.dim<span class="sc">$</span><span class="st">`</span><span class="at">Dim 1</span><span class="st">`</span><span class="sc">$</span><span class="st">&quot;quali&quot;</span></span>
+<span id="cb90-5"><a href="understanding-the-data-from-a-consumer-perspective.html#cb90-5" aria-hidden="true" tabindex="-1"></a>res.dim<span class="sc">$</span><span class="st">`</span><span class="at">Dim 1</span><span class="st">`</span><span class="sc">$</span><span class="st">&quot;category&quot;</span></span>
+<span id="cb90-6"><a href="understanding-the-data-from-a-consumer-perspective.html#cb90-6" aria-hidden="true" tabindex="-1"></a>res.dim<span class="sc">$</span><span class="st">`</span><span class="at">Dim 2</span><span class="st">`</span><span class="sc">$</span><span class="st">&quot;category&quot;</span></span></code></pre></div>
+<p>As we said previously, MCA as PCA will reduce the complexity of your data by extracting relevant dimensions. To reduce the complexity from an individual point of view, you have to cluster the individuals.</p>
+<div class="sourceCode" id="cb91"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb91-1"><a href="understanding-the-data-from-a-consumer-perspective.html#cb91-1" aria-hidden="true" tabindex="-1"></a>res.hcpc <span class="ot">&lt;-</span> <span class="fu">HCPC</span>(res.mca,<span class="at">nb.clust =</span> <span class="dv">3</span>)</span></code></pre></div>
+<p><img src="salmon_files/figure-html/unnamed-chunk-31-1.png" width="672" /><img src="salmon_files/figure-html/unnamed-chunk-31-2.png" width="672" /><img src="salmon_files/figure-html/unnamed-chunk-31-3.png" width="672" /></p>
+<p><strong>Exercise. </strong>Let’s give some interpretation to the results.</p>
+<div class="sourceCode" id="cb92"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb92-1"><a href="understanding-the-data-from-a-consumer-perspective.html#cb92-1" aria-hidden="true" tabindex="-1"></a><span class="fu">round</span>(res.hcpc<span class="sc">$</span>desc.var<span class="sc">$</span>category<span class="sc">$</span><span class="st">`</span><span class="at">1</span><span class="st">`</span>,<span class="dv">2</span>)</span>
+<span id="cb92-2"><a href="understanding-the-data-from-a-consumer-perspective.html#cb92-2" aria-hidden="true" tabindex="-1"></a><span class="fu">round</span>(res.hcpc<span class="sc">$</span>desc.var<span class="sc">$</span>category<span class="sc">$</span><span class="st">`</span><span class="at">2</span><span class="st">`</span>,<span class="dv">2</span>)</span>
+<span id="cb92-3"><a href="understanding-the-data-from-a-consumer-perspective.html#cb92-3" aria-hidden="true" tabindex="-1"></a><span class="fu">round</span>(res.hcpc<span class="sc">$</span>desc.var<span class="sc">$</span>category<span class="sc">$</span><span class="st">`</span><span class="at">3</span><span class="st">`</span>,<span class="dv">2</span>)</span></code></pre></div>
+</div>
+<div id="understanding-the-consumers-preferences" class="section level2" number="2.3">
+<h2><span class="header-section-number">2.3</span> Understanding the consumers’ preferences</h2>
+<p><strong>Exercise. </strong>You should be able to do that by yourself using PCA.</p>
+</div>
+<div id="linking-consumers-preferences-and-behaviour" class="section level2" number="2.4">
+<h2><span class="header-section-number">2.4</span> Linking consumers’ preferences and behaviour</h2>
+<p>To do so, we’re going to import a new dataset.</p>
+<div class="sourceCode" id="cb93"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb93-1"><a href="understanding-the-data-from-a-consumer-perspective.html#cb93-1" aria-hidden="true" tabindex="-1"></a>salmon_final <span class="ot">&lt;-</span> <span class="fu">read.delim2</span>(<span class="st">&quot;saumon_final.txt&quot;</span>, <span class="at">header=</span><span class="cn">TRUE</span>, <span class="at">row.names=</span><span class="dv">1</span>, <span class="at">comment.char=</span><span class="st">&quot;#&quot;</span>,<span class="at">dec=</span><span class="st">&quot;,&quot;</span>,<span class="at">stringsAsFactors=</span><span class="cn">TRUE</span>)</span>
+<span id="cb93-2"><a href="understanding-the-data-from-a-consumer-perspective.html#cb93-2" aria-hidden="true" tabindex="-1"></a><span class="fu">colnames</span>(salmon_final)</span></code></pre></div>
+<pre><code>##  [1] &quot;Country&quot;                 &quot;prod1_Fr&quot;               
+##  [3] &quot;prod2_Fr&quot;                &quot;prod3_Fr&quot;               
+##  [5] &quot;prod4_Scot&quot;              &quot;prod5_Ger&quot;              
+##  [7] &quot;prod6_Ire&quot;               &quot;prod7_Ire&quot;              
+##  [9] &quot;prod8_Ger&quot;               &quot;prod9_Ire&quot;              
+## [11] &quot;prod10_It&quot;               &quot;prod11_Fr&quot;              
+## [13] &quot;prod12_Dk&quot;               &quot;prod13_Ger&quot;             
+## [15] &quot;prod14_Ger&quot;              &quot;prod15_Fr&quot;              
+## [17] &quot;prod16_Ger&quot;              &quot;prod17_Fr&quot;              
+## [19] &quot;prod18_UK&quot;               &quot;prod19_UK&quot;              
+## [21] &quot;prod20_Dk&quot;               &quot;prod21_UK&quot;              
+## [23] &quot;prod22_Fr&quot;               &quot;prod23_Ger&quot;             
+## [25] &quot;prod24_Dk&quot;               &quot;prod25_Bel&quot;             
+## [27] &quot;prod26_UK&quot;               &quot;prod27_Fr&quot;              
+## [29] &quot;prod28_Bel&quot;              &quot;prod29_Scot&quot;            
+## [31] &quot;prod30_Bel&quot;              &quot;Who&quot;                    
+## [33] &quot;Frequence&quot;               &quot;When&quot;                   
+## [35] &quot;Taste&quot;                   &quot;Healthy&quot;                
+## [37] &quot;Pleasure&quot;                &quot;No.preparation&quot;         
+## [39] &quot;Ways&quot;                    &quot;Guest&quot;                  
+## [41] &quot;Authentic&quot;               &quot;Not.expensive&quot;          
+## [43] &quot;Supermarket&quot;             &quot;Deli&quot;                   
+## [45] &quot;Caterer&quot;                 &quot;Fish.shop&quot;              
+## [47] &quot;Market&quot;                  &quot;Mobile.van&quot;             
+## [49] &quot;Everyday&quot;                &quot;Special&quot;                
+## [51] &quot;Day.snack&quot;               &quot;Evening.snack&quot;          
+## [53] &quot;Aperitif&quot;                &quot;Starter&quot;                
+## [55] &quot;Salad&quot;                   &quot;Cooked.meal&quot;            
+## [57] &quot;Sandwich&quot;                &quot;Main&quot;                   
+## [59] &quot;Vegetable&quot;               &quot;Lemon&quot;                  
+## [61] &quot;Bread..butter&quot;           &quot;Lemon..bread..butter&quot;   
+## [63] &quot;C..fraiche&quot;              &quot;C..fraiche.with.herbs&quot;  
+## [65] &quot;Fresh.cheese&quot;            &quot;Fresh.cheese.with.herbs&quot;
+## [67] &quot;Shallots&quot;                &quot;Mustard&quot;                
+## [69] &quot;Butter&quot;                  &quot;Black.pepper&quot;           
+## [71] &quot;Horseradish&quot;             &quot;Scottish&quot;               
+## [73] &quot;Norwegian&quot;               &quot;Atlantic&quot;               
+## [75] &quot;Irish&quot;                   &quot;Wild&quot;                   
+## [77] &quot;Do.not.know&quot;             &quot;Colour&quot;                 
+## [79] &quot;Price&quot;                   &quot;Origin&quot;                 
+## [81] &quot;Brand&quot;                   &quot;Advertising&quot;            
+## [83] &quot;Glossiness&quot;              &quot;Packaging&quot;              
+## [85] &quot;Labelling.information&quot;   &quot;Number.slices&quot;          
+## [87] &quot;Weight&quot;                  &quot;Use.by.date&quot;            
+## [89] &quot;Usual.brand&quot;             &quot;Appetising&quot;             
+## [91] &quot;Firm&quot;                    &quot;Regular&quot;                
+## [93] &quot;Nice.colour&quot;             &quot;Nice.odour&quot;             
+## [95] &quot;Smooth.texture&quot;          &quot;Firm.texture&quot;           
+## [97] &quot;Greasy.mouth&quot;            &quot;Characteristic.taste&quot;   
+## [99] &quot;Not.too.salty&quot;</code></pre>
+<div class="sourceCode" id="cb95"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb95-1"><a href="understanding-the-data-from-a-consumer-perspective.html#cb95-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(salmon_final)</span></code></pre></div>
+<pre><code>##           Country       prod1_Fr          prod2_Fr           prod3_Fr      
+##  Milan        :117   Min.   :-2.1360   Min.   :-3.72220   Min.   :-2.7302  
+##  Munchen      :117   1st Qu.:-0.3792   1st Qu.:-0.68227   1st Qu.:-0.9418  
+##  Rome         :113   Median : 0.3375   Median : 0.14975   Median :-0.1079  
+##  Sittingbourne:111   Mean   : 0.2449   Mean   : 0.05328   Mean   :-0.1432  
+##  Nantes       :109   3rd Qu.: 0.9498   3rd Qu.: 0.85860   3rd Qu.: 0.6805  
+##  (Other)      :495   Max.   : 2.9666   Max.   : 2.26040   Max.   : 2.2639  
+##  NA&#39;s         : 16                                                         
+##    prod4_Scot        prod5_Ger         prod6_Ire         prod7_Ire      
+##  Min.   :-2.1235   Min.   :-2.5337   Min.   :-2.5977   Min.   :-3.1814  
+##  1st Qu.:-0.3402   1st Qu.:-0.4214   1st Qu.:-0.5485   1st Qu.:-0.9107  
+##  Median : 0.3216   Median : 0.4385   Median : 0.2509   Median :-0.1588  
+##  Mean   : 0.2441   Mean   : 0.2742   Mean   : 0.1209   Mean   :-0.1716  
+##  3rd Qu.: 0.9045   3rd Qu.: 1.0171   3rd Qu.: 0.8300   3rd Qu.: 0.5827  
+##  Max.   : 3.3236   Max.   : 2.2748   Max.   : 2.3256   Max.   : 2.1494  
+##                                                                         
+##    prod8_Ger          prod9_Ire         prod10_It         prod11_Fr        
+##  Min.   :-2.88000   Min.   :-5.3852   Min.   :-3.1743   Min.   :-3.230300  
+##  1st Qu.:-0.85177   1st Qu.:-0.5113   1st Qu.:-1.1188   1st Qu.:-0.755450  
+##  Median : 0.08645   Median : 0.2898   Median :-0.3628   Median : 0.082500  
+##  Mean   :-0.02674   Mean   : 0.1705   Mean   :-0.3298   Mean   :-0.004231  
+##  3rd Qu.: 0.83125   3rd Qu.: 0.9240   3rd Qu.: 0.4482   3rd Qu.: 0.779475  
+##  Max.   : 2.47150   Max.   : 2.1506   Max.   : 2.6033   Max.   : 2.221300  
+##                                                                            
+##    prod12_Dk          prod13_Ger        prod14_Ger          prod15_Fr      
+##  Min.   :-3.33710   Min.   :-2.3088   Min.   :-2.268400   Min.   :-2.9948  
+##  1st Qu.:-0.80417   1st Qu.:-0.5555   1st Qu.:-0.811625   1st Qu.:-0.7893  
+##  Median : 0.11725   Median : 0.2959   Median : 0.068150   Median : 0.0400  
+##  Mean   : 0.02101   Mean   : 0.1762   Mean   :-0.004349   Mean   :-0.0387  
+##  3rd Qu.: 0.86582   3rd Qu.: 0.9180   3rd Qu.: 0.776725   3rd Qu.: 0.7484  
+##  Max.   : 2.23290   Max.   : 2.5355   Max.   : 2.171200   Max.   : 2.9253  
+##                                                                            
+##    prod16_Ger        prod17_Fr         prod18_UK          prod19_UK       
+##  Min.   :-2.8800   Min.   :-3.1593   Min.   :-4.76160   Min.   :-3.02240  
+##  1st Qu.:-1.0514   1st Qu.:-0.5131   1st Qu.:-1.05927   1st Qu.:-0.96270  
+##  Median :-0.1039   Median : 0.2937   Median :-0.08125   Median : 0.03750  
+##  Mean   :-0.1459   Mean   : 0.1955   Mean   :-0.11816   Mean   :-0.05406  
+##  3rd Qu.: 0.7220   3rd Qu.: 0.9249   3rd Qu.: 0.80950   3rd Qu.: 0.84418  
+##  Max.   : 2.5916   Max.   : 2.2967   Max.   : 2.40620   Max.   : 2.46320  
+##                                                                           
+##    prod20_Dk         prod21_UK         prod22_Fr         prod23_Ger     
+##  Min.   :-2.9866   Min.   :-3.9939   Min.   :-2.5573   Min.   :-2.7796  
+##  1st Qu.:-1.0533   1st Qu.:-1.3312   1st Qu.:-0.3749   1st Qu.:-0.5266  
+##  Median :-0.2591   Median :-0.6193   Median : 0.4213   Median : 0.2942  
+##  Mean   :-0.2464   Mean   :-0.4841   Mean   : 0.2813   Mean   : 0.2050  
+##  3rd Qu.: 0.5691   3rd Qu.: 0.3917   3rd Qu.: 0.9916   3rd Qu.: 0.9395  
+##  Max.   : 2.2533   Max.   : 2.5982   Max.   : 2.9192   Max.   : 2.2837  
+##                                                                         
+##    prod24_Dk         prod25_Bel        prod26_UK           prod27_Fr      
+##  Min.   :-2.9200   Min.   :-3.7989   Min.   :-3.246900   Min.   :-3.4338  
+##  1st Qu.:-0.9318   1st Qu.:-1.0870   1st Qu.:-0.775475   1st Qu.:-0.5243  
+##  Median :-0.1290   Median :-0.2250   Median : 0.031850   Median : 0.2656  
+##  Mean   :-0.1660   Mean   :-0.2191   Mean   : 0.006847   Mean   : 0.1487  
+##  3rd Qu.: 0.5792   3rd Qu.: 0.6603   3rd Qu.: 0.836275   3rd Qu.: 0.9037  
+##  Max.   : 2.1106   Max.   : 2.6322   Max.   : 2.335100   Max.   : 2.1495  
+##                                                                           
+##    prod28_Bel        prod29_Scot         prod30_Bel             Who     
+##  Min.   :-3.86570   Min.   :-2.85220   Min.   :-3.09880   Adults  :483  
+##  1st Qu.:-0.90548   1st Qu.:-0.67820   1st Qu.:-0.80875   Both    :578  
+##  Median :-0.06030   Median : 0.14665   Median : 0.07245   Children:  1  
+##  Mean   :-0.07935   Mean   : 0.07244   Mean   : 0.01685   NA&#39;s    : 16  
+##  3rd Qu.: 0.78902   3rd Qu.: 0.84535   3rd Qu.: 0.90955                 
+##  Max.   : 2.26810   Max.   : 2.48480   Max.   : 3.45930                 
+##                                                                         
+##                Frequence                    When             Taste    
+##  Once a month       :364   All year round     :785   Comp. Agree:809  
+##  Once every 2 weeks :245   Christmas and NY   : 21   Most. Agree:232  
+##  5 to 6 times a year:235   Only the summer    : 22   Most. Disa.:  3  
+##  Once a week or more: 96   Only the winter    : 74   Neither    : 18  
+##  3 to 4 times a year: 81   Special celebration:160   NA&#39;s       : 16  
+##  (Other)            : 41   NA&#39;s               : 16                    
+##  NA&#39;s               : 16                                              
+##         Healthy           Pleasure       No.preparation          Ways    
+##  Comp. Agree:240   Comp. Agree:509   Comp. Agree:367    Comp. Agree:467  
+##  Comp. Disa.: 26   Comp. Disa.: 16   Comp. Disa.: 50    Comp. Disa.: 11  
+##  Most. Agree:345   Most. Agree:386   Most. Agree:330    Most. Agree:382  
+##  Most. Disa.: 60   Most. Disa.: 27   Most. Disa.: 91    Most. Disa.: 49  
+##  Neither    :391   Neither    :124   Neither    :224    Neither    :153  
+##  NA&#39;s       : 16   NA&#39;s       : 16   NA&#39;s       : 16    NA&#39;s       : 16  
+##                                                                          
+##          Guest           Authentic       Not.expensive Supermarket   Deli    
+##  Comp. Agree:639   Comp. Agree:200   Comp. Agree: 43   No  :101    No  :865  
+##  Comp. Disa.: 16   Comp. Disa.: 75   Comp. Disa.:136   Yes :961    Yes :197  
+##  Most. Agree:290   Most. Agree:291   Most. Agree:168   NA&#39;s: 16    NA&#39;s: 16  
+##  Most. Disa.: 15   Most. Disa.:108   Most. Disa.:361                         
+##  Neither    :102   Neither    :388   Neither    :354                         
+##  NA&#39;s       : 16   NA&#39;s       : 16   NA&#39;s       : 16                         
+##                                                                              
+##  Caterer    Fish.shop   Market    Mobile.van  Everyday   Special    Day.snack 
+##  No  :970   No  :750   No  :989   No  :1042   No  :642   No  :360   No  :888  
+##  Yes : 92   Yes :312   Yes : 73   Yes :  20   Yes :420   Yes :702   Yes :174  
+##  NA&#39;s: 16   NA&#39;s: 16   NA&#39;s: 16   NA&#39;s:  16   NA&#39;s: 16   NA&#39;s: 16   NA&#39;s: 16  
+##                                                                               
+##                                                                               
+##                                                                               
+##                                                                               
+##  Evening.snack Aperitif   Starter     Salad     Cooked.meal Sandwich  
+##  No  :676      No  :398   No  :383   No  :787   No  :776    No  :740  
+##  Yes :386      Yes :664   Yes :679   Yes :275   Yes :286    Yes :322  
+##  NA&#39;s: 16      NA&#39;s: 16   NA&#39;s: 16   NA&#39;s: 16   NA&#39;s: 16    NA&#39;s: 16  
+##                                                                       
+##                                                                       
+##                                                                       
+##                                                                       
+##    Main     Vegetable   Lemon     Bread..butter Lemon..bread..butter C..fraiche
+##  No  :806   No  :720   No  :640   No  :484      No  :706             No  :890  
+##  Yes :256   Yes :342   Yes :422   Yes :578      Yes :356             Yes :172  
+##  NA&#39;s: 16   NA&#39;s: 16   NA&#39;s: 16   NA&#39;s: 16      NA&#39;s: 16             NA&#39;s: 16  
+##                                                                                
+##                                                                                
+##                                                                                
+##                                                                                
+##  C..fraiche.with.herbs Fresh.cheese Fresh.cheese.with.herbs Shallots  
+##  No  :777              No  :922     No  :919                No  :859  
+##  Yes :285              Yes :140     Yes :143                Yes :203  
+##  NA&#39;s: 16              NA&#39;s: 16     NA&#39;s: 16                NA&#39;s: 16  
+##                                                                       
+##                                                                       
+##                                                                       
+##                                                                       
+##  Mustard      Butter    Black.pepper Horseradish Scottish   Norwegian 
+##  No  :1051   No  :973   No  :906     No  :882    No  :498   No  :485  
+##  Yes :  11   Yes : 89   Yes :156     Yes :180    Yes :564   Yes :577  
+##  NA&#39;s:  16   NA&#39;s: 16   NA&#39;s: 16     NA&#39;s: 16    NA&#39;s: 16   NA&#39;s: 16  
+##                                                                       
+##                                                                       
+##                                                                       
+##                                                                       
+##  Atlantic    Irish       Wild     Do.not.know  Colour     Price      Origin   
+##  No  :814   No  :897   No  :851   No  :819    No  :244   No  :391   No  :549  
+##  Yes :248   Yes :165   Yes :211   Yes :243    Yes :818   Yes :671   Yes :513  
+##  NA&#39;s: 16   NA&#39;s: 16   NA&#39;s: 16   NA&#39;s: 16    NA&#39;s: 16   NA&#39;s: 16   NA&#39;s: 16  
+##                                                                               
+##                                                                               
+##                                                                               
+##                                                                               
+##   Brand     Advertising Glossiness Packaging  Labelling.information
+##  No  :827   No  :1022   No  :758   No  :981   No  :650             
+##  Yes :235   Yes :  40   Yes :304   Yes : 81   Yes :412             
+##  NA&#39;s: 16   NA&#39;s:  16   NA&#39;s: 16   NA&#39;s: 16   NA&#39;s: 16             
+##                                                                    
+##                                                                    
+##                                                                    
+##                                                                    
+##  Number.slices  Weight    Use.by.date Usual.brand Appetising   Firm    
+##  No  :833      No  :892   No  :521    No  :967    No  :588   No  :903  
+##  Yes :229      Yes :170   Yes :541    Yes : 95    Yes :474   Yes :159  
+##  NA&#39;s: 16      NA&#39;s: 16   NA&#39;s: 16    NA&#39;s: 16    NA&#39;s: 16   NA&#39;s: 16  
+##                                                                        
+##                                                                        
+##                                                                        
+##                                                                        
+##  Regular     Nice.colour Nice.odour Smooth.texture Firm.texture Greasy.mouth
+##  No  :1016   No  :522    No  :611   No  :905       No  :831     No  :649    
+##  Yes :  46   Yes :540    Yes :451   Yes :157       Yes :231     Yes :413    
+##  NA&#39;s:  16   NA&#39;s: 16    NA&#39;s: 16   NA&#39;s: 16       NA&#39;s: 16     NA&#39;s: 16    
+##                                                                             
+##                                                                             
+##                                                                             
+##                                                                             
+##  Characteristic.taste Not.too.salty
+##  No  :738             No  :671     
+##  Yes :324             Yes :391     
+##  NA&#39;s: 16             NA&#39;s: 16     
+##                                    
+##                                    
+##                                    
+## </code></pre>
+<div class="sourceCode" id="cb97"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb97-1"><a href="understanding-the-data-from-a-consumer-perspective.html#cb97-1" aria-hidden="true" tabindex="-1"></a>salmon_final[<span class="dv">1063</span><span class="sc">:</span><span class="dv">1078</span>,<span class="dv">1</span><span class="sc">:</span><span class="dv">33</span>]</span></code></pre></div>
+<pre><code>##                    Country prod1_Fr prod2_Fr prod3_Fr prod4_Scot prod5_Ger
+## water                 &lt;NA&gt;  -0.8644  -1.1476  -0.4172    -0.8147   -1.6991
+## lipid                 &lt;NA&gt;   1.1375   0.7036   0.3378    -0.0961    0.0366
+## TVBN                  &lt;NA&gt;  -0.7629   0.2357   0.4354    -0.5632   -0.7629
+## TMA                   &lt;NA&gt;  -0.8717   0.3204   1.2144    -0.8717   -0.8717
+## salt                  &lt;NA&gt;  -0.1471   0.1626   0.3174     0.3174    2.1752
+## phenol                &lt;NA&gt;  -0.3776   0.0112   0.4001    -0.4554   -0.3776
+## pH                    &lt;NA&gt;   1.5412   1.2098   0.3812     0.2154   -0.2817
+## total viable count    &lt;NA&gt;   0.1112   0.4302   0.8225    -0.2432   -1.5584
+## lactic flora          &lt;NA&gt;   0.6665  -0.4514   0.8725    -1.5861   -1.5861
+## lactobacilli          &lt;NA&gt;   1.1382   0.1290   0.4088    -1.0624   -1.0624
+## brochothrix           &lt;NA&gt;   0.5461  -0.7559   0.6465    -0.7559   -0.7559
+## yeast                 &lt;NA&gt;   0.7729   1.2034   0.2875    -1.0340   -1.0340
+## enterobacteriaceae    &lt;NA&gt;   0.8314   0.5998   0.2524    -1.5793   -0.9582
+## L                     &lt;NA&gt;   0.9917   0.8542  -0.8548     0.3020   -1.3485
+## a                     &lt;NA&gt;  -0.6467   0.5297   0.3927     1.7439    0.7341
+## b                     &lt;NA&gt;  -0.4567   0.9551   0.2813     3.3236    0.5485
+##                    prod6_Ire prod7_Ire prod8_Ger prod9_Ire prod10_It prod11_Fr
+## water                -0.9886   -1.5848    0.3380    1.9081    0.1095    1.4659
+## lipid                 0.9653    1.2809    0.0940   -0.2969   -2.1795   -1.2830
+## TVBN                 -0.7629   -0.3635   -0.9626   -1.1623    0.8348   -0.7629
+## TMA                  -0.8717   -0.8717   -0.5737   -0.8717    0.0224   -0.2757
+## salt                  0.0077    0.0077   -2.0049    1.4011    0.9366   -0.4567
+## phenol                0.6594   -0.1702    1.1260    1.4631    0.9964   -0.9350
+## pH                    1.0441    0.8783   -1.1104    0.5469    0.3812   -1.7733
+## total viable count   -2.5977   -0.9336   -0.2561   -1.1271    0.2176    0.8505
+## lactic flora         -1.5861   -0.0449    0.4294   -1.5861    1.5327    0.5524
+## lactobacilli         -1.0624    0.3686    0.6069   -1.0624    1.9639    0.9344
+## brochothrix          -0.7559   -0.7559   -0.7559   -0.7559    1.9004   -0.7559
+## yeast                -1.0340   -1.0340    0.4282   -1.0340    0.7852    2.1072
+## enterobacteriaceae   -1.5793   -0.6424   -0.6634   -0.5266    0.8372    1.4683
+## L                    -0.4322   -0.4737   -1.0916    0.0550   -1.8353    0.2448
+## a                     0.4016    1.2366    0.6655   -0.3624   -1.0433   -0.5423
+## b                     0.4278    1.6822    0.9331   -0.6856   -0.5130   -0.0307
+##                    prod12_Dk prod13_Ger prod14_Ger prod15_Fr prod16_Ger
+## water                 1.3615     0.1939    -0.1787    0.3976     1.5752
+## lipid                -0.3005    -0.3722     1.6072    0.5135    -0.9711
+## TVBN                 -0.7629     0.2357    -1.1623   -0.9626    -0.7629
+## TMA                  -0.5737     0.6184    -0.8717   -0.7346    -0.2757
+## salt                 -0.3793    -0.7663     0.3174    0.3948     0.1626
+## phenol                0.3223    -1.1036    -0.4554   -0.5591    -0.5980
+## pH                    0.8783     0.5469    -0.9446   -0.2817    -0.2817
+## total viable count    0.3222     0.8076    -0.8553   -0.1907    -0.2814
+## lactic flora          0.8725     0.0282    -0.4082   -0.2986     0.5306
+## lactobacilli          1.2442    -1.0624    -1.0624   -1.0624    -1.0624
+## brochothrix          -0.7559     0.9831    -0.7559   -0.7559    -0.7559
+## yeast                 1.2038    -1.0340    -1.0340   -1.0340     0.4980
+## enterobacteriaceae    0.0419     0.9735    -0.9582    1.0419     0.0419
+## L                     0.3527     0.5279     1.3714    0.9614     0.3384
+## a                    -0.4328     0.4921    -0.0805   -0.2456     0.2588
+## b                    -1.5026     0.2601    -0.6433   -0.7466    -0.5323
+##                    prod17_Fr prod18_UK prod19_UK prod20_Dk prod21_UK prod22_Fr
+## water                -0.3228   -0.5563    1.1131   -0.3675   -1.2072   -0.9985
+## lipid                -0.5623    0.3665   -2.4628    1.6251    0.5709    0.5529
+## TVBN                 -0.3635    2.0330    1.2342   -0.7629    0.8348    1.4339
+## TMA                  -0.8717    2.1085    0.3204   -0.8717    0.3204    1.2144
+## salt                  1.5559   -1.0760    0.0077   -0.1471   -0.6115   -0.6889
+## phenol               -0.6628    1.0483    1.4890    0.0631   -1.2073    0.0631
+## pH                   -1.4418   -0.1160    0.7126   -1.2761   -1.4418   -0.4475
+## total viable count   -0.3769    0.6098    0.9992   -0.8152    1.0168    0.6157
+## lactic flora         -0.4776    0.8165    1.2062   -0.1654    0.3479    0.8681
+## lactobacilli         -1.0624   -1.0624    1.1989    0.2839    0.4541    1.0535
+## brochothrix          -0.7559    0.4217    2.4632   -0.7559    1.3957    1.1371
+## yeast                -1.0340    0.0682    0.2875    0.9324    0.2341    0.5504
+## enterobacteriaceae   -0.6266    0.0216    1.5470   -1.5793    0.0109    0.5577
+## L                     0.1846   -0.7728   -0.2587    1.5224    2.5982    0.1901
+## a                     0.3111    0.7864    0.2626   -1.3598   -3.9939   -0.0805
+## b                     0.2349    0.2931    0.8976   -1.3411   -1.8277    0.3227
+##                    prod23_Ger prod24_Dk prod25_Bel prod26_UK prod27_Fr
+## water                  2.0273    0.4821     0.4622    0.7554   -0.9240
+## lipid                 -1.5341    0.4310    -0.0853   -1.2472    0.3665
+## TVBN                  -0.3635   -0.3635     2.6322    0.4354   -0.0439
+## TMA                   -0.8717   -0.2757     2.4065    0.6184   -0.1892
+## salt                   0.9366   -0.9212    -1.3856   -0.6115    0.0077
+## phenol                -0.2221   -0.6369    -0.8443   -1.1813   -0.9739
+## pH                    -0.4475    1.3755    -1.2761    2.0384    1.0441
+## total viable count    -0.0665    0.4494     1.0223    1.0932    0.3376
+## lactic flora          -1.5861   -1.5861     0.8165    0.8362    0.7697
+## lactobacilli          -1.0624   -1.0624     1.2312    0.0909    0.5204
+## brochothrix           -0.7559   -0.7559    -0.7559    0.9443    1.7156
+## yeast                 -1.0340   -1.0340     0.2875   -1.0340    1.9679
+## enterobacteriaceae    -1.5793    0.0508    -0.1055    1.4803    1.6472
+## L                      1.0328    0.5514    -1.6298   -0.8136   -0.3829
+## a                     -0.3553   -0.5153     0.7578    0.5383    0.3803
+## b                     -0.4847   -1.4920     0.4104   -0.0762   -0.0363
+##                    prod28_Bel prod29_Scot prod30_Bel  Who Frequence
+## water                 -0.0048     -0.1439     0.0300 &lt;NA&gt;      &lt;NA&gt;
+## lipid                  0.5781     -0.4439     0.6677 &lt;NA&gt;      &lt;NA&gt;
+## TVBN                   1.8333     -0.7629     0.2357 &lt;NA&gt;      &lt;NA&gt;
+## TMA                    2.1085     -0.8717     1.2144 &lt;NA&gt;      &lt;NA&gt;
+## salt                  -1.3856      2.4848    -0.6115 &lt;NA&gt;      &lt;NA&gt;
+## phenol                -0.7406      0.4001     3.4593 &lt;NA&gt;      &lt;NA&gt;
+## pH                     0.0497     -1.1104    -0.6132 &lt;NA&gt;      &lt;NA&gt;
+## total viable count     1.1384     -2.5977     1.0558 &lt;NA&gt;      &lt;NA&gt;
+## lactic flora           0.8491     -1.5861     0.9539 &lt;NA&gt;      &lt;NA&gt;
+## lactobacilli           1.2539     -1.0624     0.9302 &lt;NA&gt;      &lt;NA&gt;
+## brochothrix            0.5758     -0.7559     0.8767 &lt;NA&gt;      &lt;NA&gt;
+## yeast                  1.1315     -1.0340     0.6964 &lt;NA&gt;      &lt;NA&gt;
+## enterobacteriaceae     0.6682     -1.5793     0.3051 &lt;NA&gt;      &lt;NA&gt;
+## L                     -1.0399     -1.2488     0.1036 &lt;NA&gt;      &lt;NA&gt;
+## a                      0.4114      0.6412    -0.8857 &lt;NA&gt;      &lt;NA&gt;
+## b                      0.2132      0.1780    -0.5929 &lt;NA&gt;      &lt;NA&gt;</code></pre>
+<p><strong>Exercise. </strong>Let’s run the following code and comment.</p>
+<div class="sourceCode" id="cb99"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb99-1"><a href="understanding-the-data-from-a-consumer-perspective.html#cb99-1" aria-hidden="true" tabindex="-1"></a>res_final <span class="ot">&lt;-</span> <span class="fu">PCA</span>(salmon_final,<span class="at">ind.sup =</span> <span class="dv">1063</span><span class="sc">:</span><span class="dv">1078</span>,<span class="at">quali.sup=</span><span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">32</span><span class="sc">:</span><span class="dv">99</span>),<span class="at">graph =</span> F)</span>
+<span id="cb99-2"><a href="understanding-the-data-from-a-consumer-perspective.html#cb99-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plot.PCA</span>(res_final,<span class="at">choix=</span><span class="st">&quot;ind&quot;</span>,<span class="at">invisible =</span> <span class="fu">c</span>(<span class="st">&quot;ind&quot;</span>,<span class="st">&quot;quali&quot;</span>))</span>
+<span id="cb99-3"><a href="understanding-the-data-from-a-consumer-perspective.html#cb99-3" aria-hidden="true" tabindex="-1"></a><span class="fu">plot.PCA</span>(res_final,<span class="at">choix=</span><span class="st">&quot;var&quot;</span>)</span>
+<span id="cb99-4"><a href="understanding-the-data-from-a-consumer-perspective.html#cb99-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb99-5"><a href="understanding-the-data-from-a-consumer-perspective.html#cb99-5" aria-hidden="true" tabindex="-1"></a>res.dim <span class="ot">&lt;-</span> <span class="fu">dimdesc</span>(res_final)</span>
+<span id="cb99-6"><a href="understanding-the-data-from-a-consumer-perspective.html#cb99-6" aria-hidden="true" tabindex="-1"></a>res.dim<span class="sc">$</span>Dim<span class="fl">.1</span><span class="sc">$</span>quanti</span>
+<span id="cb99-7"><a href="understanding-the-data-from-a-consumer-perspective.html#cb99-7" aria-hidden="true" tabindex="-1"></a>res.dim<span class="sc">$</span>Dim<span class="fl">.1</span><span class="sc">$</span>quali</span>
+<span id="cb99-8"><a href="understanding-the-data-from-a-consumer-perspective.html#cb99-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb99-9"><a href="understanding-the-data-from-a-consumer-perspective.html#cb99-9" aria-hidden="true" tabindex="-1"></a>cluster_final <span class="ot">&lt;-</span> <span class="fu">HCPC</span>(res_final)</span>
+<span id="cb99-10"><a href="understanding-the-data-from-a-consumer-perspective.html#cb99-10" aria-hidden="true" tabindex="-1"></a>cluster_final<span class="sc">$</span>desc.var<span class="sc">$</span>category<span class="sc">$</span><span class="st">`</span><span class="at">1</span><span class="st">`</span></span>
+<span id="cb99-11"><a href="understanding-the-data-from-a-consumer-perspective.html#cb99-11" aria-hidden="true" tabindex="-1"></a>cluster_final<span class="sc">$</span>desc.var<span class="sc">$</span>category<span class="sc">$</span><span class="st">`</span><span class="at">3</span><span class="st">`</span></span></code></pre></div>
+<p>Now, it’s your turn to work and to interpret.</p>
+<div class="figure" style="text-align: center"><span id="fig:salt"></span>
+<img src="images/salt.png" alt="Consumers according to the variable salt" width="340" />
+<p class="caption">
+Figure 2.1: Consumers according to the variable salt
+</p>
+</div>
+
+<div id="refs" class="references csl-bib-body hanging-indent">
+<div id="ref-courcoux06" class="csl-entry">
+Ph. Courcoux, P. Schlich, E. M. Qannari. 2006. <span>“Sensometrics Workshop: Segmentation of Consumers and Characterization of Cross-Cultural Differences.”</span> <em>Food Quality and Preference</em> 17 (2): 3–5.
+</div>
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="understanding-the-data-from-a-product-perspective.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["salmon.pdf", "salmon.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
